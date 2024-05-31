@@ -24,9 +24,13 @@ html, body {
 }
 
 header {
-    height: 5vh;
+    height: 80px;
     padding-top: 1vh;
-
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background: inherit;
+    background-attachment: fixed;
 }
 #name_tag {
     font-family: "Quicksand", sans-serif;
@@ -53,6 +57,10 @@ header {
     justify-content: right;
     gap: 1vw;
     padding-right: 3vw;
+    position: fixed;
+    width: 96%;
+    z-index: 10;
+    background-color: initial;
 }
 button {
     background: none;
@@ -144,7 +152,6 @@ button {
 .b_background {
     margin-left: 3vh;
     margin-right: 3vh;
-    margin-top: 5vh;
     min-height: 87vh;
     width: 97vw;
     background-color: #15182C;
@@ -154,6 +161,7 @@ button {
     justify-content: space-evenly;
     flex-wrap: wrap;
     flex-direction: row;
+    margin-top: 80px;
 }
 /************************************** LANDING PAGE BPDY CONTENT ***********************************************/
 
