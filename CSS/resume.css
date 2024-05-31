@@ -1,0 +1,9 @@
+.resume_box {
+    display: flex;
+    margin-top: 6vh;
+    justify-content: center;
+}
+.head_flex #home button{
+    left: 15vw;
+    top: 4vh;
+}

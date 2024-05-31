@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS/homepage.css">
+        <link rel="stylesheet" href="CSS/resume.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="UTF-8">
+
+    </head>
+    <body>
+        <header>
+            <div class="head_flex">
+                <div id="name_tag">
+                    NMD
+                </div>
+                <div id="resume_b">
+                    <button type="button" onclick="resume_page()">Resume</button>
+                    <script>
+                        function resume_page() {
+                            window.location.href = "resume.html";
+                        }
+                    </script>
+                </div>
+                <div id="home">
+                    <button type="button" onclick="home_page()"><i class="fa fa-home" aria-hidden="true"></i></button>
+                    <script>
+                        function home_page() {
+                            window.location.href = "index.html";
+                        }
+                    </script>
+                </div>
+                <div id="projects_b">
+                    <button type="button">Projects</button>                    
+                </div>
+                <div id="in_b">
+                    <a href="https://www.linkedin.com/in/nathan-deas-a61434264" target="_blank">
+                        <button><i class="fa fa-linkedin-square"></i></button>
+                    </a>
+                    <!-- <span class="in_tooltip">linkedIn</span> -->
+                </div>
+                <div id="gh_b">
+                    <a href="https://www.linkedin.com/in/nathan-deas-a61434264" target="_blank">
+                        <button><i class="fa fa-github"></i></button>
+                    </a>
+                    <!-- <span class="gh_tooltip">GitHub</span> -->
+                </div>
+            </div>
+        </header>
+
+        <div class="resume_box">
+            <object
+            type="application/pdf"
+            data="Images/Resume_Nathan_Deas.pdf"
+            width="800"
+            height="825"
+            >
+            </object>
+        </div>
+    </body>
+</html>
