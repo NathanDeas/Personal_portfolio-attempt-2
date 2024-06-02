@@ -34,7 +34,7 @@ header {
     justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 50px 10px;
     align-items: flex-start;
 }
 
@@ -120,8 +120,10 @@ button {
     font-family: "Quicksand", sans-serif;
     text-shadow: 5px 0px 5px #4A0C83;
     text-align: center;
-    margin-top: 60px;
+    display: flex;
     max-width: 500px;
+    align-items: center;
+    padding-top: 10px ;
 }
 .about {
     color: #E8E4E5;
@@ -139,32 +141,32 @@ button {
     gap: 50px;
     padding: 20px;
     flex-wrap: nowrap;
-
-
+    align-items: center;
 }
 .b_background {
     background-color: #15182C;
+    width: 1250px;
     height: fit-content;
     box-shadow: inset rgba(0, 0, 0, 0.25) 0px 14px 28px, inset rgba(0, 0, 0, 0.22) 0px 10px 10px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     flex-direction: row;
-    width: fit-content;
     min-width: 33vw;
+    max-width: 97vw;
     gap: 100px;
 }
 /************************************** LANDING PAGE BPDY CONTENT ***********************************************/
 
 /************************************** PROJECT SECTION ***********************************************/
 .Project_section {
-    height: fit-content;
-    width: fit-content;
+    /* height: fit-content;
+    width: fit-content; */
     background-color: #15182C;
     box-shadow: inset rgba(0, 0, 0, 0.25) 0px 14px 28px, inset rgba(0, 0, 0, 0.22) 0px 10px 10px;
     justify-items: center;
-
-
+    width: 1250px;
+    height: fit-content;
 }
 .Projects_title {
     font-family: "Quicksand", sans-serif;
@@ -173,33 +175,41 @@ button {
     right: 50vw;
     text-align: center;
     text-shadow: 5px 0px 5px #4A0C83;
+    padding-bottom: 50px;
 
 }
 
 .projects_box {
     display: flex;
-    gap: 5px;
-    justify-content: center;
+    flex-wrap: wrap;
     flex-direction: row;
-    max-width: fit-content;
+    gap: 20px;
+    justify-content: center;
+    max-width: 97vw;
     padding-bottom: 5vh;
-    width: 1200px;
+    width: fit-content;
     border: 1px solid white;
 } 
-.projects_box div { 
+.projects_box div:nth-child(odd)  { 
     background-color: lightblue;
-    height: 20vh;
-    width: 20vw;
+    height: 275px;
+    width: 550px;
     transition: .5s;
-    margin-left: 20px;
-    margin-top: 5vh;
+    max-width: 90vw;
+}
+.projects_box div:nth-child(even)  { 
+    color: white;
+    height: fit-content;
+    width: 550px;
+    transition: .5s;
+    max-width: 90vw;
 }
 .projects_box .Proj_one {
     background-image: url("../Images/Hackathon_Project.png");
     background-size: cover;
     background-position: center;
 }
-.projects_box div:hover {
+.projects_box div:hover:nth-child(odd) {
     background-color: white;
     transform: scale(1.03);
     transition: .5s;
@@ -211,8 +221,8 @@ button {
 .skills_section {
     color: white;
     background-color: #15182C;
-    width: fit-content;
-    height: fit-content;
+    width: 1250px;
+    height: 450px;
     box-shadow: inset rgba(0, 0, 0, 0.25) 0px 14px 28px, inset rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 .skills_title {
@@ -227,8 +237,11 @@ button {
 
 /************************************** FOOTER ***********************************************/
 footer {
-    color: black;
-    /* height: 30vh; */
-    width: 100%;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 50px;
+    color: green;
     background-color: white;
+
 }
