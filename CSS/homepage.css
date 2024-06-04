@@ -156,6 +156,10 @@ button {
     min-width: 20vw;
     max-width: 97vw;
     gap: 100px;
+    /* pointer-events: none; */
+}
+.b_background * {
+    pointer-events: NONE;
 }
 /************************************** LANDING PAGE BPDY CONTENT ***********************************************/
 
@@ -234,6 +238,9 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 5px 10px;
+}
+.projects_box p {
+    font-size: 1.1em;
 }
 .techstack button {
     background-color: white;
