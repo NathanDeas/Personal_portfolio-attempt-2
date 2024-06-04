@@ -27,7 +27,7 @@ header {
 .body_flex {
     display: flex;
     height: fit-content;
-    width: 100%;
+    width: 100vw;
     margin-top: 8vh;
     position: absolute;
     display: flex;
@@ -227,10 +227,9 @@ button {
     background-color: white;
     font-size: 1em;
     border-radius: 10px;
-    opacity: 80%;
 }
 .techstack button:hover {
-    opacity: 100%;
+
     transition: .5s;
 }
 .techstack .django {
@@ -302,20 +301,34 @@ button {
     background-color: #15182C;
     width: 1250px;
     max-width: 97vw;
-    height: 450px;
+    height: fit-content;
     min-width: 20vw;
     box-shadow: inset rgba(0, 0, 0, 0.25) 0px 14px 28px, inset rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 .skills_title {
     font-family: "Quicksand", sans-serif;
     color: white;
-    font-size: 100px;
-    right: 50vw;
     text-align: center;
     text-shadow: 5px 0px 5px #4A0C83;
 }
-.skills_box img {
-    width: 100px;
+.skills_box {
+    display: flex;
+    flex-direction: row;
+    gap: 10px
+}
+.skills_box div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: start;
+    height: fit-content;
+    width: 300px;
+}
+.skills_box div img {
+    height: 50px;
+}
+.skills_title {
+    font-size: 2em;
 }
 /************************************** SKILL SECTION ***********************************************/
 
@@ -323,10 +336,13 @@ button {
 footer {
     bottom: 0;
     left: 0;
-    width: 100vw;
-    height: 50px;
-    color: green;
-    background-color: white;
+    width: 100%;
+    height: fit-content;
+    color: white;
+    background-color: black;
+}
+footer a {
+    color: grey;
 }
 
 
@@ -337,14 +353,14 @@ footer {
     background-color: transparent;
   }
   
-  /* Track */
+ 
   ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey; 
     width: 1vw;
     background-color: #b0d4dc;
   }
    
-  /* Handle */
+
   ::-webkit-scrollbar-thumb {
     background: #2398B1; 
     border: transparent solid 10px;
