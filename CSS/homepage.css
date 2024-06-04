@@ -185,8 +185,8 @@ button {
 .projects_box {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    gap: 20px;
+    flex-direction:row;
+    gap: 30px;
     justify-content: center;
     max-width: 97vw;
     padding-bottom: 5vh;
@@ -205,9 +205,15 @@ button {
     width: 550px;
     transition: .5s;
     max-width: 90vw;
+    opacity: 60%;
 }
 .projects_box .Proj_one {
     background-image: url("../Images/Hackathon_Project.png");
+    background-size: cover;
+    background-position: center;
+}
+.projects_box .Proj_two {
+    background-image: url("../Images/class_proj.png");
     background-size: cover;
     background-position: center;
 }
@@ -215,7 +221,13 @@ button {
     background-color: white;
     transform: scale(1.03);
     transition: .5s;
+    opacity: 1;
 }
+.projects_box > div:hover:nth-child(odd) + div:nth-child(even) {
+    opacity: 1;
+
+}
+
 .techstack {
     font-size: 1.5em;
     display: flex;
@@ -229,7 +241,6 @@ button {
     border-radius: 10px;
 }
 .techstack button:hover {
-
     transition: .5s;
 }
 .techstack .django {
